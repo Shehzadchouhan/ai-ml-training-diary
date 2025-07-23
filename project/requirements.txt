@@ -1,0 +1,6 @@
+pyttsx3
+SpeechRecognition
+textblob
+scikit-learn
+numpy
+word2number
