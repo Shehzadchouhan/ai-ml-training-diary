@@ -4,38 +4,36 @@
 ### 🏫 College: Guru Nanak Dev Engineering College, Ludhiana  
 ### 🔧 Department: Computer Science and Engineering  
 ### 📘 Subject Code: TR-102  
-### 🏢 Organization/Instructor: [Pf Jaswant Singh Taur]  
+### 🏢 Organization / Instructor: Pf Jaswant Singh Taur  
 ### 📅 Duration: 26th June 2025 – 26th July 2025  
 
 ---
 
 ## 📌 Description
 
-This repository contains the **Daily Diary** of my one-month industrial training in **AI/ML domain**.  
+This repository contains the **Daily Diary** of my one-month industrial training in the **AI/ML domain**.  
 It includes:
 
-- ✅ Daily logs of topics learned and tasks performed
-- ✅ A mini project based on Machine Learning
-- ✅ Final Training Report and Presentation
+- ✅ Daily logs of topics learned and tasks performed  
+- ✅ A mini project based on Machine Learning  
+- ✅ Final Training Report and Presentation  
 
 ---
 
 ## 📁 Folder Structure
-📦 ai-ml-training-diary
-┣ 📂daily-diary # Daily logs for 30 days
-┣ 📂project # ML project (code and notebook)
-┣ 📂report # Training report & PPT
-┗ 📄 README.md # Project overview
 
-<<<<<<< HEAD
+📦 ai-ml-training-diary  
+┣ 📂 daily-diary      # Daily logs for 30 days  
+┣ 📂 project          # ML project (code and notebooks)  
+┣ 📂 report           # Training report & presentation  
+┗ 📄 README.md        # Project overview  
+
 ---
 
 ## 🔗 Useful Links
 
-- 🔗 GitHub Pages: *[link of hosting project]*
-- 📄 Training Report: *[ when ready]*
-=======
->>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
+- 🔗 GitHub Pages: *[Link to hosted project]*  
+- 📄 Training Report: *[Link to report when ready]*  
 
 ---
 
@@ -48,4 +46,3 @@ It includes:
 ---
 
 > 📢 *This repository is part of my official submission for TR-102/103 summer training.*
-
