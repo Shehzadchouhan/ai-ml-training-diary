@@ -1,0 +1,97 @@
+    /* ====== GENERAL STYLING ====== */
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f8f9fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 10px 0 5px 0;
+    }
+
+    header p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #e6e9ef;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #004aad;
+      font-weight: 600;
+      margin: 0 15px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #002e6b;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section h2 {
+      border-left: 5px solid #004aad;
+      padding-left: 10px;
+      color: #004aad;
+    }
+
+    footer {
+      background-color: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+
+    .link-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin: 10px 0;
+      background-color: #004aad;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .link-btn:hover {
+      background-color: #00357a;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
