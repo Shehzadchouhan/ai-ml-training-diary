@@ -12,6 +12,7 @@ import time
 from word2number import w2n
 import sys
 import re
+<<<<<<< HEAD
 import matplotlib.pyplot as plt
 
 
@@ -88,12 +89,29 @@ class Jarvis:
             pass
 
         # Basic command map - you can expand this to match your original map
+=======
+
+class Jarvis:
+    def __init__(self):
+        # Initialize speech engine
+        self.engine = pyttsx3.init()
+        self.engine.setProperty('rate', 150)
+        self.engine.setProperty('volume', 0.9)
+        
+        # Initialize recognizer
+        self.recognizer = sr.Recognizer()
+        self.recognizer.pause_threshold = 0.8
+        self.recognizer.energy_threshold = 4000
+        
+        # Command mappings
+>>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
         self.command_map = {
             "open youtube": self.open_youtube,
             "open google": self.open_google,
             "open whatsapp": self.open_whatsapp,
             "open notepad": self.open_notepad,
             "open calculator": self.open_calculator,
+<<<<<<< HEAD
             "open vscode": self.open_vscode,
             "tell time": self.tell_time,
             "take note": self.take_note,
@@ -135,11 +153,64 @@ class Jarvis:
                 return input("You (type): ")
             except Exception:
                 return None
+=======
+            "open vs code": self.open_vscode,
+            "time": self.tell_time,
+            "take note": self.take_note,
+            "predict marks": self.predict_student_marks,
+            "predict price": self.predict_house_price,
+            "guess my mood": self.analyze_sentiment,
+            "judge my feelings": self.analyze_sentiment  # Both spellings
+        }
+        
+        # Initialize models
+        self.initialize_models()
+
+    def speak(self, text):
+        """Improved text-to-speech with error handling"""
+        print("Jarvis:", text)
+        try:
+            self.engine.say(text)
+            self.engine.runAndWait()
+        except Exception as e:
+            print(f"Speech error: {e}")
+
+    def listen(self):
+        """Improved speech recognition with better error handling"""
+        with sr.Microphone() as source:
+            print("Adjusting for ambient noise...")
+            self.recognizer.adjust_for_ambient_noise(source, duration=1)
+            print("Listening...")
+            
+            try:
+                audio = self.recognizer.listen(source, timeout=5, phrase_time_limit=8)
+                command = self.recognizer.recognize_google(audio)
+                print("You:", command)
+                return command.lower()
+            except sr.WaitTimeoutError:
+                self.speak("I didn't hear anything. Please try again.")
+                return ""
+            except sr.UnknownValueError:
+                self.speak("Sorry, I couldn't understand that.")
+                return ""
+            except sr.RequestError as e:
+                self.speak(f"Sorry, there was an error with the speech service: {e}")
+                return ""
+            except Exception as e:
+                self.speak("An unexpected error occurred.")
+                print(f"Error: {e}")
+                return ""
+
+    def open_youtube(self):
+        webbrowser.open("https://www.youtube.com")
+        self.speak("Opening YouTube")
+>>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
 
     def open_google(self):
         webbrowser.open("https://www.google.com")
         self.speak("Opening Google")
 
+<<<<<<< HEAD
     def open_youtube(self):
         try:
             webbrowser.open("https://www.youtube.com")
@@ -148,6 +219,8 @@ class Jarvis:
             self.speak("Failed to open YouTube")
             print(f"Error: {e}")
 
+=======
+>>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
     def open_whatsapp(self):
         webbrowser.open("https://web.whatsapp.com")
         self.speak("Opening WhatsApp Web")
@@ -253,7 +326,11 @@ class Jarvis:
         if not text:
             return None
 
+<<<<<<< HEAD
         # try direct conversion first
+=======
+        # Try direct conversion first
+>>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
         try:
             return float(text)
         except ValueError:
@@ -365,6 +442,7 @@ class Jarvis:
     # ... (keep all your other imports and class methods the same until run())
 
     def run(self):
+<<<<<<< HEAD
         """Main execution loop"""
         self.speak("Hello, I am your AI assistant Jarvis. How can I help you today?")
 
@@ -415,6 +493,43 @@ class Jarvis:
                 self.speak("Sorry, I encountered an error. Please try again.")
                 time.sleep(1)
                 continue
+=======
+      """Main execution loop"""
+      self.speak("Hello, I am your AI assistant Jarvis. How can I help you today?")
+    
+      while True:
+        try:
+            command = self.listen()
+            if not command:
+                continue
+                
+            command = self.normalize_command(command)
+            
+            # First check for exit command
+            if any(word in command for word in ["exit", "quit", "goodbye"]):
+                self.speak("Goodbye! Have a great day.")
+                sys.exit(0)
+            
+            # Check for exact command matches first
+            command_found = False
+            for cmd in self.command_map:
+                if cmd in command:
+                    self.command_map[cmd]()
+                    command_found = True
+                    break
+            
+            if not command_found:
+                self.speak("Sorry, I didn't understand that command. Try something like 'open YouTube' or 'analyse sentiment'.")
+                
+        except KeyboardInterrupt:
+            self.speak("Goodbye!")
+            sys.exit(0)
+        except Exception as e:
+            print(f"Error: {e}")
+            self.speak("Sorry, I encountered an error. Please try again.")
+            time.sleep(1)
+            continue
+>>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
 
 # ... (rest of your code remains the same)
 if __name__ == "__main__":

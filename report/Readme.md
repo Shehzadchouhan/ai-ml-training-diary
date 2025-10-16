@@ -70,6 +70,7 @@ python main.py
 
 "I'm feeling sad" (sentiment analysis)
 
+<<<<<<< HEAD
 ## 📸 Screenshots
 ![Folder Structure:](images/Screenshot%202025-07-25%20112450.png)
 
@@ -78,6 +79,8 @@ python main.py
 
 ![Working...](images/Screenshot%202025-07-25%20110837.png)
 
+=======
+>>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
 
 
 📚 References

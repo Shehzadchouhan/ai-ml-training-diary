@@ -27,12 +27,15 @@ It includes:
 ┣ 📂report # Training report & PPT
 ┗ 📄 README.md # Project overview
 
+<<<<<<< HEAD
 ---
 
 ## 🔗 Useful Links
 
 - 🔗 GitHub Pages: *[link of hosting project]*
 - 📄 Training Report: *[ when ready]*
+=======
+>>>>>>> c1d6544cf615ef8f79cf546cce7003950de781cd
 
 ---
 
