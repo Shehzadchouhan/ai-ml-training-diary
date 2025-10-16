@@ -1,117 +1,72 @@
-<<<<<<< HEAD
-# 🤖 SachdevaAI Jarvis — Voice-Based AI Assistant
+# 🤖 Jarvis — Intelligent Voice Assistant
 
-An advanced **voice-based AI assistant** built using **Python**, **LangChain**, and **LiveKit**, designed and developed by **Gaurav Sachdeva**.  
-Jarvis interacts with users in **natural Hinglish (Hindi + English)** — just like how modern Indians talk every day — with reasoning capabilities powered by **LangChain Agent Mode**.
-
----
-
-## 🚀 Overview
-
-**SachdevaAI Jarvis** is not just another chatbot — it’s a thinking assistant.  
-It can:
-- Understand Hinglish (mix of Hindi and English)
-- Speak fluently with personality and humor
-- Fetch real-time information (Date, City, Weather)
-- Use reasoning and tools via **LangChain Agents**
-- Respond naturally through voice using **LiveKit**
-
-This project demonstrates how to connect real-world tools with LLMs to build a contextual, voice-enabled, reasoning assistant.
+Jarvis is a **voice-enabled AI assistant** built using **Python**, **LangChain**, and **LiveKit**, developed by **Mohd Shehzad**.  
+It communicates naturally in **Hinglish** (a mix of Hindi and English), making interactions feel conversational and personalized. Its reasoning capabilities are powered by **LangChain Agent Mode**.
 
 ---
 
-## 🧠 Tech Stack
+## 🚀 Project Overview
 
-| Component | Description |
-|------------|-------------|
-| **Python** | Core programming language used to develop Jarvis |
-| **LangChain** | Enables LLM reasoning and tool integration |
-| **LiveKit** | Powers real-time voice-based communication |
-| **AsyncIO** | Handles asynchronous tasks like API calls |
-| **Requests** | Used for fetching user’s city via IP |
-| **Custom APIs** | For weather and time fetching |
+Unlike traditional chatbots, Jarvis is a **thinking assistant** capable of:
+
+- Understanding and responding in Hinglish  
+- Conversing with personality, humor, and context  
+- Providing real-time information such as **date, location, and weather**  
+- Leveraging LangChain Agents for decision-making and tool usage  
+- Speaking naturally using **LiveKit’s voice streaming**  
+
+This project demonstrates **integration of LLMs with real-world APIs** to create a voice-based assistant with contextual reasoning.
+
+---
+
+## 🧠 Technology Stack
+
+| Component   | Purpose |
+|------------|---------|
+| Python     | Main programming language for development |
+| LangChain  | Enables reasoning and tool integration for AI |
+| LiveKit    | Powers real-time voice communication |
+| AsyncIO    | Handles asynchronous API calls and tasks |
+| Requests   | Fetches user’s city based on IP |
+| Custom APIs| Provides weather and time information |
 
 ---
 
 ## ⚙️ Features
 
-- 🗣️ **Voice Interaction:** Powered by LiveKit for real-time voice communication  
-- 💬 **Hinglish Conversation:** Natural Indian-style responses  
-- 🌦️ **Dynamic Context:** Auto-fetches current date, city, and weather  
-- 🧩 **Reasoning Mode:** Uses LangChain Agent Mode for tool-based decision-making  
-- 🧠 **Personality:** Witty, respectful, and polished assistant tone  
+- 🗣️ **Voice Interaction:** Communicate with Jarvis in real-time  
+- 💬 **Hinglish Conversation:** Natural Indian-style dialogue  
+- 🌦️ **Dynamic Context:** Automatically fetches date, location, and weather  
+- 🧩 **Reasoning Mode:** Uses LangChain Agent for decision-making  
+- 🧠 **Personality:** Witty, polite, and engaging assistant responses  
 - ⚡ **Asynchronous Execution:** Smooth performance using async functions  
 
 ---
 
-## How to get this code:
-- git clone https://github.com/Gauravsachdeva23e/SachdevaAI_Jarvis_Code.git,
-- cd SachdevaAI_Jarvis_Code
+## 📂 Getting the Code
+
+Clone the repository using:
+
+```bash
+git clone https://github.com/Shehzadchouhan/ai-ml-training-diary/tree/0d6ae3aa2399763c48210eb217c132a28ff322cf/jarvis_main/jarvis_3.0
+
+🏃 How to Run Jarvis
+
+Create a virtual environment:
+
+python -m venv venv
 
 
-<h2> How to run Jarvis </h2>
+Activate the environment:
 
-## Create a Virtual Environment
-- python -m venv venv,
-- venv\Scripts\activate
+venv\Scripts\activate
 
 
+Install dependencies:
 
-## Install Dependencies
 pip install -r requirements.txt
 
-## Run Jarvis
+
+Run the assistant:
+
 python agent.py console
-
-<h2>Watch video once (Recommended) </h2>
-SachdevaAI - https://www.youtube.com/@sachdevaAI
-=======
-# 💼 Summer Training Daily Diary (26 June – 26 July 2025)
-
-### 👨‍🎓 Name: Mohd Shehzad  
-### 🏫 College: Guru Nanak Dev Engineering College, Ludhiana  
-### 🔧 Department: Computer Science and Engineering  
-### 📘 Subject Code: TR-102  
-### 🏢 Organization / Instructor: Pf Jaswant Singh Taur  
-### 📅 Duration: 26th June 2025 – 26th July 2025  
-
----
-
-## 📌 Description
-
-This repository contains the **Daily Diary** of my one-month industrial training in the **AI/ML domain**.  
-It includes:
-
-- ✅ Daily logs of topics learned and tasks performed  
-- ✅ A mini project based on Machine Learning  
-- ✅ Final Training Report and Presentation  
-
----
-
-## 📁 Folder Structure
-
-📦 ai-ml-training-diary  
-┣ 📂 daily-diary      # Daily logs for 30 days  
-┣ 📂 project          # ML project (code and notebooks)  
-┣ 📂 report           # Training report & presentation  
-┗ 📄 README.md        # Project overview  
-
----
-
-## 🔗 Useful Links
-
-- 🔗 GitHub Pages: *[Link to hosted project]*  
-- 📄 Training Report: *[Link to report when ready]*  
-
----
-
-## 📬 Contact
-
-📧 Email: shehzadchouhan260@gmail.com  
-📱 Phone: +91 9988059285  
-📍 Address: Malerkotla, Punjab, India  
-
----
-
-> 📢 *This repository is part of my official submission for TR-102/103 summer training.*
->>>>>>> c2fdaddf674f9db6950e0423ec8baae81d290b61
