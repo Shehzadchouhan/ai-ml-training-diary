@@ -1,0 +1,23 @@
+<<<<<<< HEAD
+.env
+/conversations
+/venv
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+=======
+node_modules/
+.DS_Store
+*.log
+dist/
+.env
+
+.env
+node_modules/
+conversations/
+.DS_Store
+*.log
+dist/
+.env
+>>>>>>> c2fdaddf674f9db6950e0423ec8baae81d290b61
