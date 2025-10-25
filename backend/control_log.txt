@@ -116,3 +116,31 @@ print(sum_of_numbers)
 2025-10-25 12:40:32.704360: Controller auto-activated.
 2025-10-25 12:40:32.932195: Pressed key: enter
 2025-10-25 12:40:34.940902: Controller auto-deactivated.
+2025-10-25 22:55:36.315981: Controller auto-activated.
+2025-10-25 22:55:37.820489: Typed text: What can I help you with?
+2025-10-25 22:55:39.834952: Controller auto-deactivated.
+2025-10-25 22:58:41.317905: Controller auto-activated.
+2025-10-25 22:58:57.665081: Typed text: #include <iostream>
+
+int main() {
+ int num1, num2, result;
+
+ std::cout << "Enter first number: ";
+ std::cin >> num1;
+
+ std::cout << "Enter second number: ";
+ std::cin >> num2;
+
+ result = num1 - num2;
+
+ std::cout << "Subtraction: " << result << std::endl;
+
+ return 0;
+}
+2025-10-25 22:58:59.682257: Controller auto-deactivated.
+2025-10-25 23:02:21.256693: Controller auto-activated.
+2025-10-25 23:02:21.697516: Typed text: 23*5
+2025-10-25 23:02:23.707024: Controller auto-deactivated.
+2025-10-25 23:02:24.704875: Controller auto-activated.
+2025-10-25 23:02:24.907316: Pressed key: enter
+2025-10-25 23:02:26.907547: Controller auto-deactivated.
